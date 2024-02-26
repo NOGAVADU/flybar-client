@@ -1,0 +1,50 @@
+.adminPanel__container{
+    margin: 2rem;
+    padding: 1rem;
+    border: 2px solid var(--main-color);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--accent-font);
+    margin-bottom: 3rem;
+}
+
+.controls__container{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.controls__title{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.controls__subtitle {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.controls {
+    display: flex;
+    gap: 2rem;
+}
+
+.controls__btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+
+    transition: var(--transition-color);
+}
+
+.controls__btn:hover{
+    background: var(--accent-color);
+    color: var(--main-color);
+}
+

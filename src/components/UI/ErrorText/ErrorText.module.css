@@ -1,0 +1,26 @@
+.container {
+    font-family: var(--accent-font);
+    font-size: var(--title-fontSize);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.subtitle {
+}
+
+.link {
+    color: var(--accent-color);
+    transition: var(--transition-color);
+}
+
+.link:hover {
+    color: orange;
+}

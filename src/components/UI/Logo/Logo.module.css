@@ -1,0 +1,26 @@
+.logo__container {
+    height: max(30px, 50px);
+    width: 100px;
+    min-width: 100px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.logo {
+    width: 100%;
+    height: 100%;
+}
+
+.logo__container:hover {
+    box-shadow: 0 0 15px #ffffff3d;
+    transform: scale(1.05);
+}
+
+.logo__link:focus {
+    outline: none;
+}
+
+.logo__link:focus-visible {
+    outline: 2px solid var(--main-color);
+    outline-offset: 0.5rem;
+}

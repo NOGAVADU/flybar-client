@@ -1,0 +1,37 @@
+.accardion__container {
+}
+
+.accardion__title {
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--accent-font);
+    font-size: 1.5rem;
+    cursor: pointer;
+    text-shadow: 4px 4px 5px black;
+}
+
+.accardion__decor {
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: 600;
+    transform: rotateZ(90deg);
+    transition: transform ease 0.3s;
+}
+
+.accardion__title.active .accardion__decor{
+    transform: rotateZ(-90deg);
+}
+
+.accardion__body {
+    padding-left: 2rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height ease 0.3s;
+    gap: 1rem;
+    text-shadow: 4px 4px 5px black;
+}

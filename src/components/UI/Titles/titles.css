@@ -1,0 +1,22 @@
+.title {
+    font-size: var(--title-fontSize);
+    font-family: var(--accent-font);
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.title-big {
+    font-size: 2rem;
+}
+
+.title-orange {
+    color: var(--accent-color);
+}
+
+.title-margin {
+    margin-bottom: 2rem;
+}
+
+.title-shadow{
+    text-shadow: 4px 4px 5px black;
+}

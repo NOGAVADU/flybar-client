@@ -1,0 +1,26 @@
+.item {
+    font-size: var(--main-fontSize);
+    font-family: var(--accent-font);
+    font-weight: 700;
+}
+
+.item__link{
+    cursor: pointer;
+    color: var(--main-color);
+    transition: var(--transition-color);
+}
+
+.item__link:hover{
+    color: var(--accent-color);
+}
+
+.item__linkActive{
+    padding-bottom: 1rem;
+    cursor: default;
+    color: var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+
+
+

@@ -1,0 +1,23 @@
+.aboutUs__container {
+    display: grid;
+    grid-template: 1fr / repeat(2, 1fr);
+    align-items: center;
+    gap: 3rem;
+}
+
+.aboutUs__text {
+    font-size: var(--main-fontSize);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.aboutUs__imgContainer {
+}
+
+@media (width <= 850px) {
+    .aboutUs__container{
+        grid-template: repeat(2, auto  ) / 1fr;
+        gap: 3rem;
+    }
+}

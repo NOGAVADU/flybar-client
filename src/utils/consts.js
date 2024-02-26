@@ -1,0 +1,8 @@
+export const MAIN_ROUTE = '/'
+export const ADMIN_ROUTE = '/adminpanel'
+export const ADMINAUTH_ROUTE = '/admin'
+export const SERVICES_ROUTE = '/services'
+export const PORTFOLIO_ROUTE = '/portfolio'
+export const GALLERY_ROUTE = '/portfolio/gallery'
+export const ABOUTUS_ROUTE = '/aboutus'
+export const CONTACTS_ROUTE = '/contacts'

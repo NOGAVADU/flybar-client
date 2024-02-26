@@ -1,0 +1,206 @@
+.order__body {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.order__form {
+    display: grid;
+    grid-template-areas:
+        "name phone mail"
+        "text text text"
+        "check check check"
+        ". . btn";
+    gap: 1rem;
+}
+
+.order__label {
+    font-size: var(--main-fontSize);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.order__input {
+    padding: 0.3rem 0.5rem;
+    font-size: var(--main-fontSize);
+}
+
+.inputError {
+    outline: 3px solid var(--accent-color);
+}
+
+.label__name {
+    grid-area: name;
+}
+
+.label__phone {
+    grid-area: phone;
+}
+
+.label__mail {
+    grid-area: mail;
+}
+
+.label__text {
+    grid-area: text;
+}
+
+.label__checkbox {
+    grid-area: check;
+    display: inline;
+    line-height: 1.5em;
+    font-size: 1rem;
+}
+
+.input__checkbox {
+    cursor: pointer;
+    display: inline-grid;
+    place-content: center;
+    appearance: none;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 2px solid currentColor;
+    border-radius: 0.15em;
+}
+
+.input__checkbox::before {
+    content: "";
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--accent-color);
+}
+
+.input__checkbox:checked::before {
+    transform: scale(1);
+}
+
+.order__textArea {
+    resize: none;
+    padding: 0.5rem;
+    font-size: var(--main-fontSize);
+}
+
+.order__button {
+    grid-area: btn;
+    background: transparent;
+    color: var(--main-color);
+    font-size: var(--main-fontSize);
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding: 0.5rem 1rem;
+    transition: var(--transition-color);
+}
+
+.order__button:hover {
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.order__button:disabled:hover{
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+.order__contacts {
+    padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contacts__title {
+    font-family: var(--accent-font);
+    color: var(--accent-color);
+    font-size: 2rem;
+    text-align: center;
+}
+
+.contacts__subtitle {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.contacts__links {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contacts__link {
+    font-style: normal;
+    color: var(--main-color);
+    transition: var(--transition-color);
+}
+
+.contacts__link:hover {
+    color: var(--accent-color);
+}
+
+.red {
+    color: red;
+}
+
+.btnError {
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+    animation: btnError 0.3s ;
+}
+
+@keyframes btnError {
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(3deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-3deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+@media (width <= 1440px) {
+    .order__body {
+        display: flex;
+        flex-direction: column;
+
+    }
+    .order__form {
+        grid-template-areas:
+        "name phone mail"
+        "text text text"
+        "check check check"
+        ". btn .";
+        gap: 1rem;
+    }
+}
+
+@media (width <= 650px) {
+    .order__form {
+        display: grid;
+        grid-template-areas:
+        "name"
+        "phone"
+        "mail"
+        "text"
+        "check"
+        "btn";
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,38 @@
+
+.choose {
+    
+}
+
+.choose__title {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.choose__container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    gap: 1rem;
+}
+.choose__col {
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+
+
+.col__title{
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;;
+}
+
+.col__element {
+    padding: 0.2rem;
+    cursor: pointer;
+}
+.col__element:hover {
+    background: rgb(211, 211, 211);
+}

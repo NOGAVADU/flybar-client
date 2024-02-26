@@ -1,0 +1,6 @@
+@media (width <= 700px) {
+    .swiper-button-next, .swiper-button-prev{
+        opacity: 0;
+        transition: 0.5s ease-out;
+    }
+}

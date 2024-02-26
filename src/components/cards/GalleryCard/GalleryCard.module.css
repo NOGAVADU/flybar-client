@@ -1,0 +1,26 @@
+.card{
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.card__title{
+    padding: 1rem;
+    font-size: var(--title-fontSize);
+    font-family: var(--accent-font);
+    font-weight: 600;
+    text-shadow: 2px 2px 0 black, -2px -2px 0 var(--accent-color);
+}
+
+.card__imgContainer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.card:hover{
+    transform: scale(1.03);
+}

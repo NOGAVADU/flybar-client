@@ -1,0 +1,54 @@
+.numbers__section{
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url("../../../assets/images/background/masterclass.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.section__title{
+    text-align: center;
+    font-family: var(--accent-font);
+    font-size: clamp(2rem, 1.6667rem + 1.5238vw, 3rem);
+}
+
+.numbers__container{
+    max-width: 1440px;
+    display: grid;
+    grid-template: 1fr / repeat(4, 1fr);
+    gap: 3rem;
+}
+
+.numbers__col{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+.col__title{
+    font-family: var(--accent-font-v2);
+    font-size: 3rem;
+}
+
+.col__body{
+    border-top: 1px solid var(--main-color);
+    padding-top: 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (width <=1000px) {
+    .numbers__container{
+        grid-template: repeat(2, 1fr)/ repeat(2, 1fr);
+    }
+}
+
+@media (width <=500px) {
+    .numbers__container{
+        grid-template: repeat(4, 1fr)/ 1fr;
+    }
+}

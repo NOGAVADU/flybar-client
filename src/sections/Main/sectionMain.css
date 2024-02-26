@@ -1,0 +1,16 @@
+.main__title {
+    font-size: clamp(1.5rem, 1rem + 2.2857vw, 3rem);
+    font-weight: 700;
+    font-family: var(--accent-font);
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.title__bigOrange {
+    font-size: clamp(2rem, 1.3333rem + 3.0476vw, 4rem);
+    color: var(--accent-color);
+}
+
+.main__text {
+    font-size: 1.2rem;
+}

@@ -1,0 +1,61 @@
+@font-face {
+  font-family: Raleway;
+  src:
+    url(./Raleway-Regular.woff2) format('woff2'),
+    url(./Raleway-Regular.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Raleway;
+  src:
+    url(./Raleway-Bold.woff2) format('woff2'),
+    url(./Raleway-Bold.woff) format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex mono';
+  src: url(./IBMPlexMono-Regular.woff) format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex mono';
+  src: url(./IBMPlexMono-Bold.woff) format('woff');
+  font-weight: bold;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: NextArt;
+  font-weight: 500;
+  src: url(../fonts/NEXTART_Light.otf);
+}
+
+@font-face {
+  font-family: NextArt;
+  font-weight: 600;
+  src: url(../fonts/NEXTART_Regular.otf);
+}
+
+@font-face {
+  font-family: NextArt;
+  font-weight: 700;
+  src: url(../fonts/NEXTART_SemiBold.otf);
+}
+
+@font-face {
+  font-family: NextArt;
+  font-weight: 800;
+  src: url(../fonts/NEXTART_Bold.otf);
+}
+
+@font-face {
+  font-family: NextArt;
+  font-weight: 900;
+  src: url(../fonts/NEXTART_Heavy.otf);
+}

@@ -1,0 +1,46 @@
+.reviews__section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reviews__container {
+    padding: 0 5rem;
+    overflow: hidden;
+}
+
+.review {
+    cursor: pointer;
+    user-select: none;
+    display: grid;
+    grid-template: minmax(50px, 100px) 1fr / 1fr;
+    gap: 1rem;
+}
+
+.review__header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.review__imgContainer {
+    border: 2px solid var(--main-color);
+    width: 100px;
+    border-radius: 50%;
+}
+
+.review__subtitle {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.review__body {
+    font-size: var(--main-fontSize);
+    line-height: 1.1rem;
+}
+
+@media (width <= 700px) {
+    .reviews__container {
+        padding: 0;
+    }
+}

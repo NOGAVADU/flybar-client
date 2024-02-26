@@ -1,0 +1,14 @@
+:root {
+    /* Цвета */
+    --main-color: #f4f4f4;
+    --accent-color: #e3531c;
+    /* Шрифты */
+    --main-font: Raleway, sans-serif;
+    --accent-font: NextArt, sans-serif;
+    --accent-font-v2: "IBM Plex mono", sans-serif;
+    --main-fontSize: 16px;
+    --title-fontSize: 24px;
+    /* Анимации */
+    --transition-color: color 0.3s ease-out, background-color 0.3s ease-out,
+        border 0.3s ease-out;
+}

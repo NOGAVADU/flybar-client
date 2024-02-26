@@ -1,0 +1,22 @@
+.myLabel {
+    font-size: var(--main-fontSize);
+}
+
+.myLabel::before {
+    content: "*";
+    margin-inline-start: -8px;
+    font-size: 1.5rem;
+    color: var(--accent-color);
+}
+
+.myInput {
+    font-size: var(--main-fontSize);
+    padding: 0.3rem 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+.myInput:focus-visible{
+    outline: 1px solid var(--accent-color);
+    outline-offset: 5px;
+}

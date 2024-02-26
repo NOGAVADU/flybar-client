@@ -1,0 +1,49 @@
+.card__container {
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    padding: 1rem;
+    position: relative;
+}
+
+.card__text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.card__body {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.btns__container{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button {
+    background: transparent;
+    font-family: var(--accent-font);
+    font-size: clamp(1.5rem, 1.3333rem + 0.7619vw, 2rem);
+    font-weight: 600;
+    color: var(--main-color);
+    border-top: 2px solid var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+    padding: 0.5rem 1rem;
+    transition: var(--transition-color);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button:hover {
+    color: var(--accent-color);
+    border-top: 2px solid var(--accent-color);
+    border-bottom: 2px solid var(--accent-color);
+}

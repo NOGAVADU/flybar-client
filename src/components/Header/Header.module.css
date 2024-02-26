@@ -1,0 +1,143 @@
+.header {
+    width: min(100%, 1440px);
+    margin: 0 auto;
+    height: 100px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    z-index: 1;
+}
+
+.header__nav {
+
+}
+
+.header__burger {
+    right: 0;
+    position: fixed;
+    display: none;
+}
+
+.burger__button{
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.burger__button .button__bar{
+    display: block;
+    background: var(--main-color);
+    margin: 0.5rem 0;
+    width: 2rem;
+    height: 3px;
+    border-radius: 3px;
+    transition: transform 0.3s ease-in-out, opacity 0.1s linear;
+}
+
+.burger__button.active .button__bar:nth-child(1){
+    transform: translateY(11px) rotate(45deg);
+}
+
+.burger__button.active .button__bar:nth-child(2){
+    opacity: 0;
+}
+
+.burger__button.active .button__bar:nth-child(3){
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.burger__popup{
+    padding: 1rem;
+    position: fixed;
+    inset: 0 0 0 0;
+    background: #1a0c0e;
+    z-index: -1;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.burger__popup.active{
+    transform: translateX(0);
+}
+
+.popup__logoContainer{
+    margin-top: 0.5rem;
+}
+
+.popup__nav{
+}
+
+.contacts {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contacts__links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+}
+
+.contacts__link {
+    color: var(--main-color);
+    font-size: var(--main-fontSize);
+    font-style: normal;
+    transition: var(--transition-color);
+}
+
+.contacts__link:hover {
+    color: var(--accent-color);
+}
+
+
+.admin__controls {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.admin__btn {
+    background: var(--main-color);
+    color: black;
+    padding: 1rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    transition: var(--transition-color);
+}
+
+.admin__btn:hover {
+    color: var(--main-color);
+    background: var(--accent-color);
+}
+
+@media (width <= 1000px) {
+    .contacts__links {
+        display: none;
+    }
+}
+
+@media (width <= 820px) {
+    .header__nav{
+        margin-left: auto;
+    }
+    .contacts {
+        display: none;
+    }
+}
+
+@media (width <= 600px) {
+    .header__burger{
+        margin-left: auto;
+        display: flex;
+    }
+    .header__nav{
+        display: none;
+    }
+}
+

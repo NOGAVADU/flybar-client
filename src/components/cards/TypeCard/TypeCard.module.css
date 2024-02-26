@@ -1,0 +1,22 @@
+.container {
+}
+
+.title {
+    font-size: 2rem;
+    font-family: var(--accent-font);
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+}
+
+.service__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+    grid-auto-rows: minmax(100px, 200px);
+    padding: 1rem 0;
+    grid-auto-flow: dense;
+    gap: 2rem;
+}

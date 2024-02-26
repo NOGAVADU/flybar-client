@@ -1,0 +1,132 @@
+.modal {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: #000000b7;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.modal__content.active {
+    transform: scale(1);
+}
+
+.modal__content {
+    display: flex;
+    flex-direction: column;
+    width: 50vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    transform: scale(0.5);
+    transition: all 0.3s;
+    background-color: #fff;
+}
+
+.modal__body {
+    width: 100%;
+}
+
+.modal__header {
+    margin-left: auto;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.modal__controlsCloseBtn {
+    display: grid;
+    place-items: center;
+    background: transparent;
+    color: black;
+    font-size: 1.5rem;
+    padding: 5px;
+}
+
+.modal__controlsCloseBtn:hover {
+    color: var(--accent-color);
+}
+
+/* Общие стили для внутренних элементов */
+
+.modal__title {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.modal__formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.modal__form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.addBtn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+.addBtn:hover {
+    background: rgb(170, 170, 170);
+}
+
+.modal__formTitle {
+    font-size: 1.2rem;
+}
+
+.modal__chooseVariant {
+    cursor: pointer;
+}
+
+.modal__chooseVariant:hover {
+    background: rgb(179, 179, 179);
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.info__deleteBtn {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.info__paragraph {
+    display: flex;
+    gap: 1rem;
+}
+
+.price__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
+
+.price__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}

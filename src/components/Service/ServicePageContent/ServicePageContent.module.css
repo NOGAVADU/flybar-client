@@ -1,0 +1,16 @@
+.container{
+    display: grid;
+    grid-template: 1fr / minmax(300px, 2fr) minmax(300px, 1fr);
+    gap: 2rem;
+}
+
+.image{
+    border-radius: 1rem;
+    box-shadow: 4px 4px 0 var(--accent-color);
+}
+
+@media (width <= 700px) {
+    .container{
+        grid-template: repeat(2, minmax(auto, 1fr)) / 1fr;
+    }
+}
