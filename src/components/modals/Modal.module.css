@@ -13,6 +13,7 @@
     pointer-events: none;
     opacity: 0;
     transition: all 0.3s;
+    z-index: 99;
 }
 
 .modal.active {
@@ -25,6 +26,8 @@
 }
 
 .modal__content {
+    max-height: 90%;
+    overflow-y: scroll;
     display: flex;
     flex-direction: column;
     width: 50vw;
@@ -115,7 +118,8 @@
 }
 
 .info__paragraph {
-    display: flex;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 100px;
     gap: 1rem;
 }
 

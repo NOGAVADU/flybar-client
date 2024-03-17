@@ -1,4 +1,6 @@
 .card{
+    flex: 1 1 max(300px, 20%);
+    height: max(200px, 300px);
     cursor: pointer;
     position: relative;
     transition: transform 0.3s;

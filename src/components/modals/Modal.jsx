@@ -1,12 +1,16 @@
 import cl from "./Modal.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faClose } from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faClose} from "@fortawesome/free-solid-svg-icons";
 
-const Modal = ({ active, setActive, children }) => {
+const Modal = ({active, setActive, children}) => {
     return (
         <div
             className={active ? [cl.modal, cl.active].join(" ") : cl.modal}
-            onClick={() => setActive(false)}
+            onMouseDown={(event) => {
+                if (event.currentTarget === event.target) {
+                    setActive(false)
+                }
+            }}
         >
             <div
                 className={
@@ -21,7 +25,7 @@ const Modal = ({ active, setActive, children }) => {
                         className={cl.modal__controlsCloseBtn}
                         onClick={() => setActive(false)}
                     >
-                        <FontAwesomeIcon icon={faClose} />
+                        <FontAwesomeIcon icon={faClose}/>
                     </button>
                 </div>
                 <div className={cl.modal__body}>{children}</div>

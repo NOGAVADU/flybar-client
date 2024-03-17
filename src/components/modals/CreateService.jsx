@@ -156,7 +156,7 @@ const CreateService = () => {
                                 />
                                 <textarea
                                     className={cl.modal__input}
-                                    placeholder="Введите содержание параграфа параграфа"
+                                    placeholder="Введите содержание параграфа"
                                     value={i.description}
                                     onChange={(e) =>
                                         changeInfo(

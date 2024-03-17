@@ -17,6 +17,7 @@ const Header = observer(() => {
         admin.setIsAuth(false);
         localStorage.clear()
     };
+
     return (
         <header className={cl.header}>
             <Logo src={flyBarLogo} alt="Логотип компании, надпись FlyBar" />
