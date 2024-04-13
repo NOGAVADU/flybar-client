@@ -1,16 +1,21 @@
 .container{
     display: grid;
-    grid-template: 1fr / minmax(300px, 2fr) minmax(300px, 1fr);
+    grid-template: 1fr / minmax(300px, 3fr) minmax(300px, 2fr);
     gap: 2rem;
 }
+
 
 .image{
     border-radius: 1rem;
     box-shadow: 4px 4px 0 var(--accent-color);
 }
 
-@media (width <= 700px) {
+@media (width <= 768px) {
     .container{
-        grid-template: repeat(2, minmax(auto, 1fr)) / 1fr;
+        display: flex;
+        flex-direction: column;
+    }
+    .image__container {
+        max-height: 50%;
     }
 }

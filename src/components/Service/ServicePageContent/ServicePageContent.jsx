@@ -6,11 +6,13 @@ import PageTitle from "../../UI/Titles/PageTitle.jsx";
 const ServicePageContent = ({service, title}) => {
     return (
         <div className={cl.container}>
-            <article>
+            <article className={cl.text__container}>
                 <PageTitle>{title}</PageTitle>
                 <ServiceInfo service={service}/>
             </article>
-            <Image src={import.meta.env.VITE_API_URL + service.img} classes={[cl.image]}/>
+            <div className={cl.image__container}>
+                <Image src={import.meta.env.VITE_API_URL + service.img} classes={[cl.image]}/>
+            </div>
         </div>
     );
 };

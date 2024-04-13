@@ -17,3 +17,9 @@
     height: 100%;
     object-fit: contain;
 }
+
+@media (width <=600) {
+    .container{
+        z-index: -1;
+    }
+}
