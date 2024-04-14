@@ -9,7 +9,14 @@ const ServiceCard = ({ service }) => {
     return (
         <div
             className={cl.container}
-            onClick={() => navigate(SERVICES_ROUTE + "/" + service.id)}
+            onClick={() => {
+                navigate(SERVICES_ROUTE + "/" + service.id)
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: "smooth",
+                });
+            }}
         >
             <div className={cl.content}>
                 <h4 className={cl.title}>{service.name}</h4>

@@ -18,7 +18,7 @@ const Services = observer(() => {
         <main>
             {loading ?
                 <Loader/> :
-                <Container style={{display: 'flex', flexDirection: 'column', gap: "3rem"}}>
+                <Container style={{display: 'flex', flexDirection: 'column-reverse', gap: "3rem"}}>
                     {type.types.map((type) => (
                         <TypeCard key={type.id} type={type}/>
                     ))}
