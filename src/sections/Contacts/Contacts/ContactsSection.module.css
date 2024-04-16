@@ -31,14 +31,14 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap:  clamp(1rem, 1.1849rem + 2.0168vw, 3rem);
 }
 
 .social__links{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 3rem;
+    gap:  clamp(1rem, 1.1849rem + 2.0168vw, 3rem);
     font-size: 3rem;
 }
 
