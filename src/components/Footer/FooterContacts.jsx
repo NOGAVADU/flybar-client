@@ -1,9 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import cl from "./Footer.module.css";
 import {
+    faSquareInstagram,
     faTelegram,
     faVk,
-    faWhatsapp,
     faWhatsappSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
@@ -24,6 +24,9 @@ const FooterContacts = (props) => {
                 </a>
                 <a href="https://vk.com/newflybar" className={cl.contacts__socialLink} target={'__blank'}>
                     <FontAwesomeIcon icon={faVk} />
+                </a>
+                <a href="https://t.me/+uaL58GT9TEE4OWUy" className={cl.contacts__socialLink} target={'__blank'}>
+                    <FontAwesomeIcon icon={faSquareInstagram} />
                 </a>
                 <a href="https://wa.me/79032531944" className={cl.contacts__socialLink} target={'__blank'}>
                     <FontAwesomeIcon icon={faWhatsappSquare} />

@@ -1,9 +1,17 @@
 .container{
-    display: grid;
-    grid-template: 1fr / minmax(300px, 3fr) minmax(300px, 2fr);
+    /*display: grid;*/
+    /*grid-template: 1fr / minmax(300px, 3fr) minmax(300px, 2fr);*/
+    display: flex;
     gap: 2rem;
 }
 
+.text__container{
+    flex: 0 1 calc(100% / 5 * 3);
+}
+
+.image__container{
+    flex: 1 0 calc(100% / 5 * 2);
+}
 
 .image{
     border-radius: 1rem;
@@ -17,5 +25,10 @@
     }
     .image__container {
         max-height: 50%;
+    }
+
+    .image{
+        border-radius: 1rem;
+        box-shadow: none;
     }
 }
