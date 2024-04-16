@@ -5,3 +5,11 @@
     width: 100%;
     z-index: 0;
 }
+
+.hard {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.soft {
+    background-color: rgba(0, 0, 0, 0.3);
+}

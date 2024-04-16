@@ -112,7 +112,7 @@ const OrderForm = (props) => {
     return (
         <section>
             <Container {...props}>
-                <SectionTitle style={{fontSize: '3rem', marginBottom: '2rem'}}>Оформить заказ</SectionTitle>
+                <SectionTitle style={{fontSize: '3rem', marginBottom: '2rem'}}>Оформить заявку</SectionTitle>
                 <div className={cl.order__body}>
                     <form className={cl.order__form}>
                         <label

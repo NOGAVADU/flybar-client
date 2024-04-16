@@ -8,7 +8,7 @@ const ServicePriceCol = ({ service, type, index }) => {
         <>
             {service.price[index] && (
                 <div className="price__col_container">
-                    <BgImage src={priceBg} />
+                    <BgImage src={priceBg} saturation='hard'/>
                     <div className="price__col">
                         <ParagraphTitle>
                             {service.name} &laquo;{type}&raquo;

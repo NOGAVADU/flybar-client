@@ -11,6 +11,9 @@
 }
 
 .price__col_container{
+    border: 2px solid #292929;
+    border-radius: 1rem;
+    /*background: #292929;*/
     padding: 1rem;
     position: relative;
 }

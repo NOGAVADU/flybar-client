@@ -21,8 +21,7 @@ const OrderFormContacts = () => {
                 </a>
             </address>
             <h4 className={cl.contacts__subtitle}>
-                Пишите и звоните нам в любое время, будем рады
-                ответить!
+                Пишите или звоните нам - будем рады на них ответить!
             </h4>
         </div>
     );

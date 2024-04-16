@@ -22,7 +22,7 @@ const ServiceCard = ({ service }) => {
                 <h4 className={cl.title}>{service.name}</h4>
                 <p className={cl.body}>{service.service_body}</p>
             </div>
-            <BgImage src={import.meta.env.VITE_API_URL + service.img} />
+            <BgImage src={import.meta.env.VITE_API_URL + service.img} saturation='soft'/>
         </div>
     );
 };
