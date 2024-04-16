@@ -25,7 +25,7 @@ const FooterContacts = (props) => {
                 <a href="https://vk.com/newflybar" className={cl.contacts__socialLink} target={'__blank'}>
                     <FontAwesomeIcon icon={faVk} />
                 </a>
-                <a href="https://t.me/+uaL58GT9TEE4OWUy" className={cl.contacts__socialLink} target={'__blank'}>
+                <a href="https://www.instagram.com/flybar_ru?igsh=amNyaXBzdWx2aGp4&utm_source=qr" className={cl.contacts__socialLink} target={'__blank'}>
                     <FontAwesomeIcon icon={faSquareInstagram} />
                 </a>
                 <a href="https://wa.me/79032531944" className={cl.contacts__socialLink} target={'__blank'}>
